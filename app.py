@@ -8,7 +8,7 @@ class App:
         self.app = Flask(__name__)
 
         # Cadena de conexión de MongoDB Atlas
-        self.app.config["MONGO_URI"] = "mongodb+srv://vaniadonajitorres:02Mayovd@cluster0.ddgjd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+        self.app.config["MONGO_URI"] = "mongodb+srv://vaniadonajitorres:02Mayovd@cluster0.ddgjd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&ssl=false"
         
         # Crear cliente MongoDB
         self.client = MongoClient(self.app.config["MONGO_URI"])
